@@ -23,9 +23,9 @@
 				<div class="col s1"></div>
 				<div class="col s10">
 					<div class="row" style="display: flex; align-items: center;">
+						<div class="col s2"><a href="./form_wizard1.html"><div id="circulo2"></div></a></div>
+						<div class="col s8"><p id="subtituloTi">Paso dos</p><div style="background-color: gray; height: 5px"></div></div>
 						<div class="col s2"><div id="circulo"></div></div>
-						<div class="col s8"><p id="subtituloTi">Paso uno</p><div style="background-color: gray; height: 5px"></div></div>
-						<div class="col s2"><a href="./form_wizard2.html"><div id="circulo2"></div></a></div>
 					</div>
 				</div>
 			</div>
@@ -33,53 +33,40 @@
 			<div class="row">
 				<div class="col s.5"></div>
 				<div class="col s6" style="margin-top: 15px">
-					<label for="serieTi">¿Cuál es tu serie favorita?</label>
+					<label for="libroTi">Menciona tu libro favorito</label>
 				</div>
 				<div class="col s5">
-					<input type="text" id="serieTi">
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col s.5"></div>
-				<div class="col s6" style="margin-top: 25px">
-					<label>¿Género cinematográfico?</label>
-				</div>
-				<div class="col s5">
-					<div class="input-field">
-						<select class="browser-default">
-  							<option value="" disabled selected>Selecciona</option>
-  							<option value="1">Acción</option>
-  							<option value="2">Aventuras</option>
-  							<option value="3">Ciencia Ficción</option>
-  							<option value="4">Comedia</option>
-  							<option value="5">Drama</option>
-  							<option value="6">Fantasía</option>
-  							<option value="7">Musical</option>
-  							<option value="8">Suspense</option>
-  							<option value="9">Terror</option>
-  						</select>
-					</div>
+					<input type="text" id="libroTi">
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col s.5"></div>
 				<div class="col s6" style="margin-top: 15px">
-					<label for="peliculaTi">Menciona tu película preferida</label>
+					<label for="vivirTi">¿Dónde te gustaría vivir?</label>
 				</div>
 				<div class="col s5">
-					<input type="text" id="peliculaTi">
+					<input type="text" id="vivirTi">
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col s.5"></div>
 				<div class="col s6" style="margin-top: 15px">
-					<label for="streamingTi">Mejor plataforma de straming</label>
+					<label for="viajeTi">Describe tu mejor viaje</label>
 				</div>
 				<div class="col s5">
-					<input type="text" id="streamingTi">
+					<textarea id="viajeTi" class="materialize-textarea"></textarea>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s.5"></div>
+				<div class="col s6" style="margin-top: 15px">
+					<label for="trabajarTi">¿En qué te gustaría trabajar?</label>
+				</div>
+				<div class="col s5">
+					<input type="text" id="trabajarTi">
 				</div>
 			</div>
 
@@ -89,7 +76,7 @@
 					<a class="waves-effect waves-light btn" id="btnCancelar" style="width:100%; border-radius: 10px;"><p id="botonTi">CANCELAR</p></a>
 				</div>
 				<div class="col s4">
-					<a class="waves-effect waves-light btn" id="btnSiguiente" href="./form_wizard2.html" style="width:100%; border-radius: 10px;"><p id="botonTi">SIGUIENTE</p></a>
+					<a class="waves-effect waves-light btn" id="btnSiguiente" style="width:100%; border-radius: 10px;"><p id="botonTi">FINALIZAR</p></a>
 				</div>
 			</div>
 
@@ -144,5 +131,8 @@
 			text-align: center;
 		}
 	</style>
+	<script type="text/javascript">
+		
+	</script>
 </body>
 </html>

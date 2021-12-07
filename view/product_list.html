@@ -1,0 +1,276 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Librerías de Materialize -->
+	<script type="text/javascript" src="../js/materialize.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/materialize.css">
+	<script type="text/javascript" src="../js/materialize.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
+	<!-- Librería de iconos Materialize -->
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>ENQUI</title>
+</head>
+<body>
+	<nav>
+	    <div class="nav-wrapper">
+	        <a href="#!" class="brand-logo"><i class="material-icons"></i>Logo</a>
+	    </div>
+	</nav>
+
+	<div class="row" style="align-content: center; display: flex; height: 40px">
+    	<form class="col s8">
+      		<div class="row">
+        		<div class="input-field col s6">
+        			<i class="material-icons prefix">search</i>
+          			<input id="icon_prefix" type="text" class="validate" placeholder="Buscar">
+        		</div>
+    		</div>
+    	</form>
+  	</div>
+  	<div style="margin-top: 20px"></div>
+  	<p id="subtitulo">JUGUETES</p>
+  	<div class="row" id="containerPro">
+  		<div class="col s1">
+  			<a class="waves-effect waves-light" onclick="before()">
+  				<i class="material-icons prefix" style="font-size: 40px !important">navigate_before</i>
+  			</a>
+  		</div>
+  		<div class="col s2">
+  			<div style="width: 100%; height: 100%">
+  				<div class="contenedorImgTI">
+  					<img src="../images/juguetes/mandalorian.jpg" style="width: 55%; height: 90%; margin-left: 20%; margin-top: 5%">
+  				</div>
+  				<p id="nombreTi">El camino asi es</p>
+  				<p id="precioTi">527.93</p>
+  			</div>
+  		</div>
+  		<div class="col s2">
+  			<div style="width: 100%; height: 100%">
+  				<div class="contenedorImgTI">
+  					<img src="../images/juguetes/walle.jpg" style="width: 40%; height: 90%; margin-left: 30%; margin-top: 5%">
+  				</div>
+  				<p id="nombreTi">Funko de Wall-e</p>
+  				<p id="precioTi">359.10</p>
+  			</div>
+  		</div>
+  		<div class="col s2">
+  			<div style="width: 100%; height: 100%">
+  				<div class="contenedorImgTI">
+  					<img src="../images/juguetes/spiderman.jpg" style="width: 40%; height: 90%; margin-left: 30%; margin-top: 5%">
+  				</div>
+  				<p id="nombreTi">Funko de Spider-man</p>
+  				<p id="precioTi">249.00</p>
+  			</div>
+  		</div>
+  		<div class="col s2">
+  			<div style="width: 100%; height: 100%">
+  				<div class="contenedorImgTI">
+  					<img src="../images/juguetes/yoda.jpg" style="width: 40%; height: 90%; margin-left: 30%; margin-top: 5%">
+  				</div>
+  				<p id="nombreTi">Star wars Yoda</p>
+  				<p id="precioTi">1,499.00</p>
+  			</div>
+  		</div>
+  		<div class="col s2">
+  			<div style="width: 100%; height: 100%">
+  				<div class="contenedorImgTI">
+  					<img src="../images/juguetes/goku.jpg" style="width: 40%; height: 90%; margin-left: 30%; margin-top: 5%">
+  				</div>
+  				<p id="nombreTi">BANDAI - Dragon Ball</p>
+  				<p id="precioTi">699.00</p>
+  			</div>
+  		</div>
+  		<div class="col s.5"></div>
+  		<div class="col s.5">
+  			<a class="waves-effect waves-light" onclick="next()">
+  				<i class="material-icons prefix" style="font-size: 40px !important">navigate_next</i>
+  			</a>
+  		</div>
+  	</div>
+
+  	<div style="margin-top: 20px"></div>
+  	<p id="subtitulo">LIBROS</p>
+  	<div class="row" id="containerPro">
+  		<div class="col s1">
+  			<a class="waves-effect waves-light" onclick="before()">
+  				<i class="material-icons prefix" style="font-size: 40px !important">navigate_before</i>
+  			</a>
+  		</div>
+  		<div class="col s2">
+  			<div style="width: 100%; height: 100%">
+  				<div class="contenedorImgTI">
+  					<img src="../images/libros/blade.jpg" style="width: 40%; height: 90%; margin-left: 30%; margin-top: 5%">
+  				</div>
+  				<p id="nombreTi">Blade Runner</p>
+  				<p id="precioTi">256.50</p>
+  			</div>
+  		</div>
+  		<div class="col s2">
+  			<div style="width: 100%; height: 100%">
+  				<div class="contenedorImgTI">
+  					<img src="../images/libros/castillo.jpg" style="width: 40%; height: 90%; margin-left: 30%; margin-top: 5%">
+  				</div>
+  				<p id="nombreTi">El hombre en el castillo</p>
+  				<p id="precioTi">350.79</p>
+  			</div>
+  		</div>
+  		<div class="col s2">
+  			<div style="width: 100%; height: 100%">
+  				<div class="contenedorImgTI">
+  					<img src="../images/libros/estigmas.jpg" style="width: 40%; height: 90%; margin-left: 30%; margin-top: 5%">
+  				</div>
+  				<p id="nombreTi">Los tres Estigmas</p>
+  				<p id="precioTi">249.00</p>
+  			</div>
+  		</div>
+  		<div class="col s2">
+  			<div style="width: 100%; height: 100%">
+  				<div class="contenedorImgTI">
+  					<img src="../images/libros/lagrimas.jpg" style="width: 40%; height: 90%; margin-left: 30%; margin-top: 5%">
+  				</div>
+  				<p id="nombreTi">Fluyan mis lagrimas</p>
+  				<p id="precioTi">249</p>
+  			</div>
+  		</div>
+  		<div class="col s2">
+  			<div style="width: 100%; height: 100%">
+  				<div class="contenedorImgTI">
+  					<img src="../images/libros/ubik.jpg" style="width: 40%; height: 90%; margin-left: 30%; margin-top: 5%">
+  				</div>
+  				<p id="nombreTi">Ubik</p>
+  				<p id="precioTi">299.20</p>
+  			</div>
+  		</div>
+  		<div class="col s.5"></div>
+  		<div class="col s.5">
+  			<a class="waves-effect waves-light" onclick="next()">
+  				<i class="material-icons prefix" style="font-size: 40px !important">navigate_next</i>
+  			</a>
+  		</div>
+  	</div>
+
+  	<div style="margin-top: 20px"></div>
+  	<p id="subtitulo">DISCOS</p>
+  	<div class="row" id="containerPro">
+  		<div class="col s1">
+  			<a class="waves-effect waves-light" onclick="before()">
+  				<i class="material-icons prefix" style="font-size: 40px !important">navigate_before</i>
+  			</a>
+  		</div>
+  		<div class="col s2">
+  			<div style="width: 100%; height: 100%">
+  				<div class="contenedorImgTI">
+  					<img src="../images/musica/whoracle.jpg" style="width: 60%; height: 90%; margin-left: 20%; margin-top: 5%">
+  				</div>
+  				<p id="nombreTi">Whoracle</p>
+  				<p id="precioTi">499.20</p>
+  			</div>
+  		</div>
+  		<div class="col s2">
+  			<div style="width: 100%; height: 100%">
+  				<div class="contenedorImgTI">
+  					<img src="../images/musica/jester.jpg" style="width: 60%; height: 90%; margin-left: 20%; margin-top: 5%">
+  				</div>
+  				<p id="nombreTi">Jester Race</p>
+  				<p id="precioTi">369.50</p>
+  			</div>
+  		</div>
+  		<div class="col s2">
+  			<div style="width: 100%; height: 100%">
+  				<div class="contenedorImgTI">
+  					<img src="../images/musica/come.jpg" style="width: 60%; height: 90%; margin-left: 20%; margin-top: 5%">
+  				</div>
+  				<p id="nombreTi">Come Clarity</p>
+  				<p id="precioTi">349.00</p>
+  			</div>
+  		</div>
+  		<div class="col s2">
+  			<div style="width: 100%; height: 100%">
+  				<div class="contenedorImgTI">
+  					<img src="../images/musica/colony.jpg" style="width: 60%; height: 90%; margin-left: 20%; margin-top: 5%">
+  				</div>
+  				<p id="nombreTi">Colony</p>
+  				<p id="precioTi">1,299.00</p>
+  			</div>
+  		</div>
+  		<div class="col s2">
+  			<div style="width: 100%; height: 100%">
+  				<div class="contenedorImgTI">
+  					<img src="../images/musica/clayman.jpg" style="width: 60%; height: 90%; margin-left: 20%; margin-top: 5%">
+  				</div>
+  				<p id="nombreTi">Clayman</p>
+  				<p id="precioTi">1,499.00</p>
+  			</div>
+  		</div>
+  		<div class="col s.5"></div>
+  		<div class="col s.5">
+  			<a class="waves-effect waves-light" onclick="next()">
+  				<i class="material-icons prefix" style="font-size: 40px !important">navigate_next</i>
+  			</a>
+  		</div>
+  	</div>
+
+
+  	<style type="text/css">
+  		.contenedorImgTI{
+  			width: 100%;
+  			height: 70%;
+  			background-color: white;
+  			margin-top: 5%;
+  			border-radius: 20px;
+  			border-color: black;
+  			border-width: 1px;
+  			border-style: solid;
+  		}
+  		.material-icons{
+  			color: #46467A;
+  		}
+  		#icon_prefix{
+  			color: #46467A;
+  		}
+  		#subtitulo{
+  			font-family: Bebas Neue;
+  			font-size: 22px;
+  			margin-left: 3%;
+  		}
+  		#nombreTi{
+  			font-family: Montserrat;
+  			font-size: 16px;
+  			text-align: center;
+  		}
+  		#precioTi{
+  			font-family: Montserrat;
+  			font-size: 13px;
+  			text-align: center;
+  		}
+  		#containerPro{
+  			margin-left: 3%;
+  			background-color: #C2CEDB;
+  			width: 94%;
+  			height: 30%;
+  			border-radius: 20px;	
+  		}
+  		#navegacionTi{
+  			height: 100%;
+  			width: 40px;
+  		}
+  		.waves-effect{
+  			width: 100%;
+  			height: 100%;
+  			border-radius: 25px;
+  			display: flex;
+  			align-items: center;
+  			background-color: #C2CEDB;
+  		}
+  	</style>
+  	<script type="text/javascript">
+    	function before() {
+  			alert("before");
+  		}
+  		function next() {
+  			alert("next");
+  		}
+  	</script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Librerías de Materialize -->
+    <script type="text/javascript" src="../js/materialize.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>ENQUI</title>
+</head>
+
+<body style="background-color: #46467A;">
+    <header style="background-color: #7766C6; height: 120px;"></header>
+    <div class="container">
+        <div class="form-mod">
+            <form  id="form">
+                <div class="row title-text">
+                    <div class="col s8" style="margin-left: 5%;">
+                        <div style="margin-top: 5%;">Nombre</div>
+                        <div><input type="text" style="width: 100%;" id="nombre"/></div>
+                        <span style="color: red;" hidden id="nombreE">Por favor ingrese un nombre</span>
+                    </div>
+                </div>
+
+                <div class="row title-text">
+                    <div class="col s8" style="margin-left: 5%;">
+                        <div style="margin-top: 5%;">Correo</div>
+                        <div><input type="text" style="width: 100%;" id="correo"/></div>
+                        <span style="color: red;" hidden id="correoE">Por favor ingrese un correo</span>
+                    </div>
+                </div>
+
+                <div class="row title-text">
+                    <div class="col s8" style="margin-left: 5%;">
+                        <div style="margin-top: 5%;">Telefono</div>
+                        <div><input type="text" style="width: 100%;" id="telefono"/></div>
+                        <span style="color: red;" hidden id="telefonoE">Por favor ingrese un telefono</span>
+                    </div>
+                </div>
+
+                <div class="row title-text">
+                    <div class="col s8" style="margin-left: 5%;">
+                        <div style="margin-top: 5%;">Motivo</div>
+                        <div><textarea id="text-box"></textarea></div>
+                        <span style="color: red;" hidden id="motivoE">Por favor ingrese un motivo</span>
+                        <div style="margin-top: 20px;"></div>
+                    </div>
+                    <div class="col s3">
+                        <a class="waves-effect waves-light btn comprar" id="enviar"><div style="margin-top: 10%;">Enviar</div></a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+
+</body>
+<style>
+    .btn.comprar {
+        color: white;
+        text-align: center;
+        width: 75%;
+        height: 60px;
+        margin-top: 55%;
+        margin-left: 20%;
+
+        font-family: Bebas Neue;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 25px;
+
+        background: linear-gradient(275.76deg, #7158E2 44.33%, #CD84F1 98.56%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+
+    #text-box {
+        margin-top: 2%;
+        width: 100%;
+        height: 200px;
+        background-color: white;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .form-mod {
+        margin-top: 100px;
+        background: #E0DFFD;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 27px;
+    }
+
+    .title-text {
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 29px;
+    }
+</style>
+
+</html>
+
+<script>
+    const button = document.getElementById('enviar');
+    const nombreE = document.getElementById('nombreE');
+    const correoE = document.getElementById('correoE');
+    const telefonoE = document.getElementById('telefonoE');
+    const motivoE = document.getElementById('motivoE');
+
+    button.addEventListener("click", e => {
+        var nombre = document.getElementById('nombre');
+        var correo = document.getElementById('correo');
+        var telefono = document.getElementById('telefono');
+        var motivo = document.getElementById('text-box');
+
+        if(nombre.value.length < 1){
+            nombreE.removeAttribute('hidden');
+        }else{
+            nombreE.setAttribute('hidden', '');
+        }
+
+        if(correo.value.length < 1){
+            correoE.removeAttribute('hidden');
+        }else{
+            correoE.setAttribute('hidden', '');
+        }
+
+        if(telefono.value.length < 1){
+            telefonoE.removeAttribute('hidden');
+        }else{
+            telefonoE.setAttribute('hidden', '');
+        }
+
+        if(motivo.value.length < 2){
+            motivoE.removeAttribute('hidden');
+        }else{
+            motivoE.setAttribute('hidden', '');
+        }
+        
+    })
+
+</script>

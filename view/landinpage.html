@@ -8,52 +8,153 @@
     <script type="text/javascript" src="../js/materialize.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <title>ENQUI</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo"><i class="material-icons"></i>Logo</a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="sass.html"><i class="material-icons">#</i></a></li>
-                    <li><a href="badges.html"><i class="material-icons">#</i></a></li>
-                    <li><a href="collapsible.html"><i class="material-icons">#</i></a></li>
-                    <li><a href="mobile.html"><i class="material-icons">#</i></a></li>
-                </ul>
-            </div>
-        </nav>
+	    <div class="nav-wrapper">
+	        <a href="#!" class="brand-logo"> 
+	        	<img src="../images/Logo.png" align="left"style="width: 11.5%; height: 25%; margin-left:4%; margin-top: 0.5%" >
+	        	<p id="titulo">ENQUI</p>
+	        </a>
+	        <ul id="nav-mobile" class=" hide-on-med-and-down">
+        		<li><a href="./DashboardRegistro.html" id="titulo1">Registro</a></li>
+        		<li><a href="./DashboardListado.html" id="titulo1">Productos</a></li>
+        		<li><a href="./DashboardGrafico.html" id="titulo1">Gráficos</a></li>
+      		</ul>
+	    </div>
+	</nav>
     </header>
     <div class="parallax-container">
-        <div class="parallax"><img src="../images/banner2.jpg"></div>
-    </div>
-    <div class="section white">
-        <div class="row container">
-            <h2 class="header">Parallax</h2>
-            <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in
-                this case, is moved at a different speed than the foreground content while scrolling.</p>
+        <div class="parallax"><img src="../images/electrónicos.jpg " style="width: 100%; height: 140%; margin-left:10%; margin-top: 0%" >
+        </div>
+        <div> 
+        	<img src="../images/electrónico1.jpg " style="width: 9%; height: 20%; margin-left:15%; margin-top: 1%" > 
         </div>
     </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="../images/banner2.jpg"></div>
-    </div>
-    <div class="section white">
+    <div class="section ">
         <div class="row container">
-            <h2 class="header">Parallax</h2>
-            <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in
-                this case, is moved at a different speed than the foreground content while scrolling.</p>
+            <h2 class="header" id="titulo2">¡Todos nuestro departamento de electronica con 10% de descuento!</h2>
+            <p class="grey-text text-darken-3 lighten-3" id="titulo3">1 dic - 6 Enero 
+            	<a class="waves-effect waves-light btn">Comprar</a></p>
+
         </div>
     </div>
-    <div class="parallax-container">
-        <div class="parallax"><img src="../images/banner2.jpg"></div>
+    <div class="parallax-container p1">
+        <div> 
+        	<img src="../images/tenis2.jpg " style="width: 100%; height: 10%;"> 
+        </div>
+    </div>
+    <div class="section section1">
+        <div class="row container">
+            <h2 class="header" id="titulo2">Tienda de tenis</h2>
+            <p class="grey-text text-darken-3 lighten-3" id="titulo3">Las marcas más buscadas</p> 
+        </div>
+    </div>
+    <div class="section white">
+        <div class="row container " style="display: flex;">
+        	<img src="../images/Descuentos.png "  style="width: 20%; height: 20%;"><p class="lighten-3" id="texto">Descuentos</p>
+        	<img src="../images/Cupones.png " style="width: 20%; height: 20%;"><p class="lighten-3" id="texto">Cupones</p>
+        	<img src="../images/Regalos.png " style="width: 20%; height: 20%;"><p class="lighten-3" id="texto">Regalos</p>
+        </div>
+
+    </div>
+
+    <div class="fixed-action-btn">
+        <a class="waves-effect waves-light btn btn-floating btn-large purple modal-trigger" href="#modal1"><i
+                class="material-icons">chat</i></a>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal bottom-sheet " style="width: 50%; background-color: #E0DFFD;">
+        <div class="modal-content">
+            <h4 >Soporte Online</h4>
+            <p>Mariana</p>
+            <div class="col s8  offset-m2 l6 offset-l3">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                    <div class="row valign-wrapper">
+                        <div class="col s8">
+                            <img src="../images/soporte.png" width="35%" alt="" class="circle responsive-img">
+                        </div>
+                        <div class="col s12">
+                            <span class="black-text">
+                                Escribe tu problema y con gusto te atenderemos.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <textarea id="textarea1" class="materialize-textarea" placeholder="Escribe..."></textarea>
+            <button class="modal-close btn waves-effect waves-light" type="submit" name="action"
+                style="background-color: #46467A;border-radius: 40px;">Enviar
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
     </div>
 </body>
 
 <style>
     .parallax-container {
-        height: 300px;
+        height: 350px;
     }
+    .p1{
+    	height: 400px;
+    }
+    #nav-mobile{
+			margin-left: 75%;
+		}
+  		#titulo{
+  			font-family: 'Montserrat', sans-serif;
+  			font-size: 28px;
+  			margin-left: 3%;
+  		}
+  		#titulo1{
+  			font-family: 'Montserrat', sans-serif;
+  			font-size: 18px;
+  			margin-left: 3%;
+  		}
+  		#titulo2{
+  			font-family: Bebas Neue;
+  			font-size: 35px;
+  			margin-left: 3%;
+  			color:#000000;
+  		}
+  		#titulo3{
+  			font-family: Bebas Neue;
+  			font-size: 30px;
+  			margin-left: 3%;
+  			color:#3E3D3D;
+  		}
+  		#texto{
+  			font-family: Bebas Neue;
+  			font-size: 25px;
+  			margin-left: 1%;
+  			margin-top:7%;
+  			margin-right:5%;
+  			color:#3E3D3D;
+  		}
+  		.section{
+  			background-color:#E0DFFD;
+  			
+  		}
+  		.section1{
+  			background-color:#C2CEDB;
+  			
+  		}
+  		.btn{
+  			background-color:#F9B0C3;
+  			font-size: 23px;
+  			font-family: Bebas Neue;
+  			border-radius: 20%;
+
+  		}
 </style>
 
 </html>
@@ -68,3 +169,10 @@
         $('.parallax').parallax();
     });
 </script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+    </script>

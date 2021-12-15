@@ -1,152 +1,219 @@
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Librerías de Materialize -->
-	<script type="text/javascript" src="../js/materialize.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/materialize.css">
-	<script type="text/javascript" src="../js/materialize.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
-	<!-- Librería de iconos Materialize -->
-	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Librerías de Materialize -->
+  <script type="text/javascript" src="../js/materialize.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/materialize.css">
+  <script type="text/javascript" src="../js/materialize.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
+  <!-- Librería de iconos Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <style>
-    body {
-        font-family: 'Montserrat';
-    }
-    </style>
+  body {
+    font-family: 'Montserrat';
+  }
+</style>
+
 <body>
-    <div>
-        <nav style="font-family: 'Montserrat'">
-            <div class="nav-wrapper" style="background-color:#46467a">
-                <a href="#!" class="brand-logo"><img class="responsive-img" width="70%" src="../images/Logo.png"></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <!-- Dropdown Trigger -->
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons"
-                                style="color: #F9B0C3">person</i><i class="material-icons right">arrow_drop_down</i></a>
-                    </li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown2"><i class="material-icons"
-                                style="color: #F9B0C3">notifications_active</i><i
-                                class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown3"><i class="material-icons"
-                                style="color: #F9B0C3">shopping_cart</i><i
-                                class="material-icons right">arrow_drop_down</i></a></li>
+  <div>
+    <nav style="font-family: 'Montserrat'">
+      <div class="nav-wrapper" style="background-color:#46467a">
+        <a href="#!" class="brand-logo"><img class="responsive-img" width="70%" src="../images/Logo.png"></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Categorias</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons"
+                style="color: #F9B0C3">person</i><i class="material-icons right">arrow_drop_down</i></a>
+          </li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown2"><i class="material-icons"
+                style="color: #F9B0C3">notifications_active</i><i class="material-icons right">arrow_drop_down</i></a>
+          </li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown3"><i class="material-icons"
+                style="color: #F9B0C3">shopping_cart</i><i class="material-icons right">arrow_drop_down</i></a></li>
 
-                </ul>
-            </div>
-        </nav>
-
-        <!-- Dropdown Structure 1 -->
-        <ul id="dropdown1" class="dropdown-content">
-            <li><a href="#!">Perfil</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">Config.</a></li>
         </ul>
-        <!-- Dropdown Structure 2-->
-        <ul id="dropdown2" class="dropdown-content">
-            <li><a href="#!">Mensajes</a></li>
-            <li class="divider"></li>
-            <li><a href="#!">Wizard</a></li>
-        </ul>
-    </div>
-
-	<div id="div1">	
-	<div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">Nombre(S):</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">Apellido(S):</label>
-        </div>
       </div>
+    </nav>
 
-      <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix">phone</i>
-          <input id="icon_telephone" type="tel" class="validate">
-          <label for="icon_telephone">Teléfono</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix">email</i>
-          <input id="icon_email" type="email" class="validate">
-          <label for="icon_email">Correo Electrónico:</label>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix">enhanced_encryption</i>
-          <input id="icon_password" type="password" class="validate">
-          <label for="icon_password">Contraseña:</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix">enhanced_encryption</i>
-          <input id="icon_password" type="password" class="validate">
-          <label for="icon_password">ConfirmarContraseña:</label>
-        </div>
-      	</div>
-      	<div class="row" id="div2">
-      		<center>
-      		<div  class="input-field col s6"> 
-        		<button class="btn waves-effect1 waves-light" type="submit" name="action">Cancelar</button>
-       		</div>
-       		<div class="input-field col s6">
-        		<button class="btn waves-effect2 waves-light" type="submit" name="action">Registrar</button>
-        	</div>
-        	</center>
-        </div>
-    </form>
+    <!-- Dropdown Structure 1 -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">Perfil</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Config.</a></li>
+    </ul>
+    <!-- Dropdown Structure 2-->
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="#!">Mensajes</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Wizard</a></li>
+    </ul>
   </div>
-</div>
-	<style type="text/css">
-		#div1{
-			margin-left: 5%;
-			margin-right: 5%;
-			margin-top: 2%;
-		}
-		#div2{
-			margin-left: 5%;
-			margin-right: 5%;
-			margin-top: 15%;
-		}
-  		.waves-effect{
-  			border-radius: 18px;
-  			background-color: #FFFFFF;
-  		}
-  		.waves-effect1{
-  			font-family: Bebas Neue;
-  			font-size: 21px;
-  			color:#000000;
-  			background-color: #C2CEDB;
-  		}
-  		.waves-effect2{
-  			font-family: Bebas Neue;
-  			font-size: 21px;
-  			background-color: #46467A;
-  		}
-  	</style>
-  	<script type="text/javascript">
-    
-  	</script>
+
+  <div id="div1">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Nombre(S):</label>
+            <span style="color: red;" hidden id="nombreE">Por favor ingrese un nombre</span>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix2" type="text" class="validate">
+            <label for="icon_prefix2">Apellido(S):</label>
+            <span style="color: red;" hidden id="apellidoE">Por favor ingrese un apellido</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">phone</i>
+            <input id="icon_telephone" type="tel" class="validate">
+            <label for="icon_telephone">Teléfono</label>
+            <span style="color: red;" hidden id="telefonoE">Por favor ingrese un telefono</span>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">email</i>
+            <input id="icon_email" type="email" class="validate">
+            <label for="icon_email">Correo Electrónico:</label>
+            <span style="color: red;" hidden id="correoE">Por favor ingrese un correo</span>
+            <span class="helper-text" data-error="Correo Invalido" data-success="Correo Valido"></span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">enhanced_encryption</i>
+            <input id="icon_password" type="password" class="validate">
+            <label for="icon_password">Contraseña:</label>
+            <span style="color: red;" hidden id="passE">Por favor ingrese una contraseña</span>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">enhanced_encryption</i>
+            <input id="icon_password2" type="password" class="validate">
+            <label for="icon_password2">ConfirmarContraseña:</label>
+            <span style="color: red;" hidden id="passConfE">Por favor confirme la contraseña</span>
+          </div>
+        </div>
+        <div class="row" id="div2">
+          <center>
+            <div class="input-field col s6">
+              <button class="btn waves-effect1 waves-light" type="reset">Cancelar</button>
+            </div>
+            <div class="input-field col s6">
+              <a id="registrar" class="btn waves-effect2 waves-light" >Registrar</a>
+            </div>
+          </center>
+        </div>
+      </form>
+    </div>
+  </div>
+  <style type="text/css">
+    #div1 {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 2%;
+    }
+
+    #div2 {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 15%;
+    }
+
+    .waves-effect {
+      border-radius: 18px;
+      background-color: #FFFFFF;
+    }
+
+    .waves-effect1 {
+      font-family: Bebas Neue;
+      font-size: 21px;
+      color: #000000;
+      background-color: #C2CEDB;
+    }
+
+    .waves-effect2 {
+      font-family: Bebas Neue;
+      font-size: 21px;
+      background-color: #46467A;
+    }
+  </style>
+  <script type="text/javascript">
+  </script>
+  <script>
+    const button = document.getElementById('registrar');
+    const nombreE = document.getElementById('nombreE');
+    const apellidoE = document.getElementById('apellidoE');
+    const telefonoE = document.getElementById('telefonoE');
+    const correoE = document.getElementById('correoE');
+    const passE = document.getElementById('passE');
+    const passConfE = document.getElementById('passConfE');
+
+    button.addEventListener("click", e => {
+    var nombre = document.getElementById('icon_prefix');
+    var apellido = document.getElementById('icon_prefix2');
+    var telefono = document.getElementById('icon_telephone');
+    var correo = document.getElementById('icon_email');
+    var pass = document.getElementById('icon_password');
+    var passConf = document.getElementById('icon_password2');
+
+      if (nombre.value.length < 1) {
+        nombreE.removeAttribute('hidden');
+      } else {
+        nombreE.setAttribute('hidden', '');
+      }
+
+      if (apellido.value.length < 1) {
+        apellidoE.removeAttribute('hidden');
+      } else {
+        apellidoE.setAttribute('hidden', '');
+      }
+
+      if (telefono.value.length < 1) {
+        telefonoE.removeAttribute('hidden');
+      } else {
+        telefonoE.setAttribute('hidden', '');
+      }
+
+      if (correo.value.length < 1) {
+        correoE.removeAttribute('hidden');
+      } else {
+        correoE.setAttribute('hidden', '');
+      }
+
+      if (pass.value.length < 1) {
+        passE.removeAttribute('hidden');
+      } else {
+        passE.setAttribute('hidden', '');
+      }
+
+      if (passConf.value.length < 1) {
+        passConfE.removeAttribute('hidden');
+      } else {
+        passConfE.setAttribute('hidden', '');
+      }
+
+    })
+  </script>
 </body>
+
 </html>

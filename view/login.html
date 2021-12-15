@@ -23,7 +23,8 @@
     body {
         font-family: 'Bebas Neue';
     }
-    </style>
+</style>
+
 <body>
     <div>
         <nav style="font-family: 'Montserrat'">
@@ -63,9 +64,9 @@
         </ul>
     </div>
 
-    <div class="container" >
-        <div class="row" >
-            <div class="col l12 " >
+    <div class="container">
+        <div class="row">
+            <div class="col l12 ">
                 <div class="card horizontal" style="border-radius: 2%">
                     <div class="card-image">
                         <div class="row l12"></div>
@@ -76,36 +77,53 @@
                         <div class="row l12"></div>
                         <img src="../images/icono_login.svg">
                     </div>
-                    <div class="card-stacked valign-wrapper" style="background-color: #F9B0C3" >
-                        <h4 class="white-text" >¡Bienvenido!</h4>
-                        <div class="card-content" >
+                    <div class="card-stacked valign-wrapper" style="background-color: #F9B0C3">
+                        <h4 class="white-text">¡Bienvenido!</h4>
+                        <div class="card-content">
                             <p>Usuario</p>
-                            <div class="input-field col l12" >
-                                
-                                <input id="icon_prefix" style="padding-left: 10%;padding-right: 10%; border: #46467a; border-style: solid; border-radius: 5%; background-color:rgba(255, 255, 255, 0.671)" type="text" class="validate">
+                            <div class="input-field col s12">
+
+                                <input  id="usuario"
+                                    style="padding-left: 20%; padding-right: 10%; border: #46467a; border-style: solid; border-radius: 5%; background-color:rgba(255, 255, 255, 0.671)"
+                                    type="text" class="validate">
                                 <i class="material-icons prefix" style="color: #7766C6; padding-left: 2%;">person</i>
-                                <label for="icon_prefix" style="font-family: 'Montserrat'">Usuario</label>
+                                <label for="usuario" style="font-family: 'Montserrat'">Usuario</label>
                                 <p>
-                                    <label >
-                                      <input type="checkbox" class="filled-in" checked="checked"/>
-                                      <span style="font-family: 'Montserrat'">Recuerdame</span>
+                                    <label>
+                                        <input type="checkbox" class="filled-in" checked="checked" />
+                                        <span style="font-family: 'Montserrat'; color: white;">Recuerdame</span>
                                     </label>
-                                  </p>
-                              </div>
-                              <div class="row"></div>
-                              <p>Contraseña</p>
-                              <div class="input-field col l12">
-                                <input id="icon_prefix"  style="padding-left: 10%;padding-right: 10%; border: #46467a; border-style: solid; border-radius: 5%; background-color:rgba(255, 255, 255, 0.671)" type="text" class="validate">
+                                </p>
+                                <div class="row">
+                                <div class="col s12">
+                                    <span style="color: red;" hidden id="usuarioE">Por favor ingrese un usuario</span>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="row"></div>
+                            <p>Contraseña</p>
+                            <div class="input-field col s12">
+                                <input  id="pass"
+                                    style="padding-left: 20%; padding-right: 10%; border: #46467a; border-style: solid; border-radius: 5%; background-color:rgba(255, 255, 255, 0.671)"
+                                    type="password" class="validate">
                                 <i class="material-icons prefix" style="color: #7766C6; padding-left: 2%;">lock</i>
-                                <label for="icon_prefix" style="font-family: 'Montserrat'">Contraseña</label>
-                              </div>
+                                <label for="pass" style="font-family: 'Montserrat'">Contraseña</label>
+                            </div>
+                            <div class="row">
+                            <div class="col s12">
+                                <span style="color: red;" hidden id="passE">Por favor ingrese una contraseña</span>
+                            </div>
+                        </div>
                         </div>
                         <div class="card-action">
                             <div class="col">
-                                <a class="waves-effect waves-light btn" style="border-radius: 40px; background-color: #F9B0C3">Registrate</a>
+                                <a class="waves-effect waves-light btn"
+                                    style="border-radius: 40px; background-color: #F9B0C3">Registrate</a>
                             </div>
                             <div class="col">
-                                <a class="waves-effect waves-light btn" style="border-radius: 40px; background-color: aliceblue; border-color: #F9B0C3; border-style: solid;"><span class="pink-text text-lighten-3">Iniciar Sesión</span></a>
+                                <a class="waves-effect waves-light btn" id="enviar"
+                                    style="border-radius: 40px; background-color: aliceblue; border-color: #F9B0C3; border-style: solid;"><span
+                                        class="pink-text text-lighten-3">Iniciar Sesión</span></a>
                             </div>
                             <div class="row"></div>
                             <div class="row">
@@ -121,10 +139,33 @@
 
     </div>
     <script>
+        const button = document.getElementById('enviar');
+        const usuarioE = document.getElementById('usuarioE');
+        const passE = document.getElementById('passE');
+
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.dropdown-trigger');
             var instances = M.Dropdown.init(elems);
         });
+
+        button.addEventListener("click", e => {
+            var usuario = document.getElementById('usuario');
+            var pass = document.getElementById('pass');
+
+            if (usuario.value.length < 1) {
+                usuarioE.removeAttribute('hidden');
+            } else {
+                usuarioE.setAttribute('hidden', '');
+            }
+
+            if (pass.value.length <1 ) {
+                passE.removeAttribute('hidden');
+            } else {
+                passE.setAttribute('hidden', '');
+            }
+
+        })
+
     </script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>

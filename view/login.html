@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<style>
+    body {
+        font-family: 'Bebas Neue';
+    }
+    </style>
+<body>
+    <div>
+        <nav style="font-family: 'Montserrat'">
+            <div class="nav-wrapper" style="background-color:#46467a">
+                <a href="#!" class="brand-logo"><img class="responsive-img" width="70%" src="../images/logo.png"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons"
+                                style="color: #F9B0C3">person</i><i class="material-icons right">arrow_drop_down</i></a>
+                    </li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown2"><i class="material-icons"
+                                style="color: #F9B0C3">notifications_active</i><i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown3"><i class="material-icons"
+                                style="color: #F9B0C3">shopping_cart</i><i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Dropdown Structure 1 -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">Perfil</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Config.</a></li>
+        </ul>
+        <!-- Dropdown Structure 2-->
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="#!">Mensajes</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Wizard</a></li>
+        </ul>
+    </div>
+
+    <div class="container" >
+        <div class="row" >
+            <div class="col l12 " >
+                <div class="card horizontal" style="border-radius: 2%">
+                    <div class="card-image">
+                        <div class="row l12"></div>
+                        <div class="row l12"></div>
+                        <div class="row l12"></div>
+                        <div class="row l12"></div>
+                        <div class="row l12"></div>
+                        <div class="row l12"></div>
+                        <img src="../images/icono_login.svg">
+                    </div>
+                    <div class="card-stacked valign-wrapper" style="background-color: #F9B0C3" >
+                        <h4 class="white-text" >¡Bienvenido!</h4>
+                        <div class="card-content" >
+                            <p>Usuario</p>
+                            <div class="input-field col l12" >
+                                
+                                <input id="icon_prefix" style="padding-left: 10%;padding-right: 10%; border: #46467a; border-style: solid; border-radius: 5%; background-color:rgba(255, 255, 255, 0.671)" type="text" class="validate">
+                                <i class="material-icons prefix" style="color: #7766C6; padding-left: 2%;">person</i>
+                                <label for="icon_prefix" style="font-family: 'Montserrat'">Usuario</label>
+                                <p>
+                                    <label >
+                                      <input type="checkbox" class="filled-in" checked="checked"/>
+                                      <span style="font-family: 'Montserrat'">Recuerdame</span>
+                                    </label>
+                                  </p>
+                              </div>
+                              <div class="row"></div>
+                              <p>Contraseña</p>
+                              <div class="input-field col l12">
+                                <input id="icon_prefix"  style="padding-left: 10%;padding-right: 10%; border: #46467a; border-style: solid; border-radius: 5%; background-color:rgba(255, 255, 255, 0.671)" type="text" class="validate">
+                                <i class="material-icons prefix" style="color: #7766C6; padding-left: 2%;">lock</i>
+                                <label for="icon_prefix" style="font-family: 'Montserrat'">Contraseña</label>
+                              </div>
+                        </div>
+                        <div class="card-action">
+                            <div class="col">
+                                <a class="waves-effect waves-light btn" style="border-radius: 40px; background-color: #F9B0C3">Registrate</a>
+                            </div>
+                            <div class="col">
+                                <a class="waves-effect waves-light btn" style="border-radius: 40px; background-color: aliceblue; border-color: #F9B0C3; border-style: solid;"><span class="pink-text text-lighten-3">Iniciar Sesión</span></a>
+                            </div>
+                            <div class="row"></div>
+                            <div class="row">
+                                <div class="col"><i class="material-icons prefix">facebook</i></div>
+                                <div class="col"><i class="material-icons prefix">gmail</i></div>
+                                <div class="col"><i class="material-icons prefix">instagram</i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems);
+        });
+    </script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>

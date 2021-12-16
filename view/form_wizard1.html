@@ -4,18 +4,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Librerías de Materialize -->
 	<script type="text/javascript" src="../js/materialize.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="../css/materialize.css">
 	<title>ENQUI</title>
 </head>
 <body>
 	<!-- Menú logeado -->
-	<nav>
-	    <div class="nav-wrapper">
-	        <a href="#!" class="brand-logo"><i class="material-icons"></i>Logo</a>
-	    </div>
-	</nav>
+	<div>
+		<nav style="font-family: 'Montserrat'">
+			<div class="nav-wrapper" style="background-color:#46467a">
+				<a href="landinpage.html" class="brand-logo"><img class="responsive-img" width="70%"
+						src="../images/Logo.png"></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="product_list.html">Catalogo</a></li>
+					<li><a href="#">Ofertas</a></li>
+					<li><a href="#">Nosotros</a></li>
+					<li><a href="contacto_form.html">Contacto</a></li>
+					<!-- Dropdown Trigger -->
+					<li><a href="profile.html" class="dropdown-trigger" style="margin-left: 0%;"><i class="material-icons"><input type="image"
+									src="../images/icon/user.png" width="30" height="30" style="margin-top: 50%;" data-target="dropdown1"/></i></a>
+					</li>
+					<li><a href="shoping_cart.html"><i class="material-icons"><input type="image" src="../images/icon/carrito.png"
+									width="30" height="30" style="margin-top: 50%;" /></i></a></li>
+					<li><a href="" class="modal-trigger" style="margin-top: 25%;"><i class="material-icons"><input
+									type="image" src="../images/icon/notification.png" width="30" height="30"
+									style="margin-left: 0%;" /></i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 	<div class="row" style="height: 100%; width: 100%; position: fixed; background-color: #7766C6;">
-		<div class="col" style="background-color: #F9B0C3; height: 90%; width: 50%; margin-left:25%; margin-top:1%; border-radius:50px">
+		<div class="col" style="background-color: white; height: 90%; width: 50%; margin-left:25%; margin-top:1%; border-radius:50px">
 			<div style="height:20px"></div>
 			<center><p id="tituloTi">HÁBLANOS DE TI</p></center>
 

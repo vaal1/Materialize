@@ -4,18 +4,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Librerías de Materialize -->
 	<script type="text/javascript" src="../js/materialize.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="../css/materialize.css">
 	<title>ENQUI</title>
 </head>
 <body>
 	<!-- Menú logeado -->
-	<nav>
-	    <div class="nav-wrapper">
-	        <a href="#!" class="brand-logo"><i class="material-icons"></i>Logo</a>
-	    </div>
-	</nav>
+	<div>
+		<nav style="font-family: 'Montserrat'">
+			<div class="nav-wrapper" style="background-color:#46467a">
+				<a href="landinpage.html" class="brand-logo"><img class="responsive-img" width="70%"
+						src="../images/Logo.png"></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="product_list.html">Catalogo</a></li>
+					<li><a href="#">Ofertas</a></li>
+					<li><a href="#">Nosotros</a></li>
+					<li><a href="contacto_form.html">Contacto</a></li>
+					<!-- Dropdown Trigger -->
+					<li><a href="profile.html" class="dropdown-trigger" style="margin-left: 0%;"><i class="material-icons"><input type="image"
+									src="../images/icon/user.png" width="30" height="30" style="margin-top: 50%;" data-target="dropdown1"/></i></a>
+					</li>
+					<li><a href="shoping_cart.html"><i class="material-icons"><input type="image" src="../images/icon/carrito.png"
+									width="30" height="30" style="margin-top: 50%;" /></i></a></li>
+					<li><a href="" class="modal-trigger" style="margin-top: 25%;"><i class="material-icons"><input
+									type="image" src="../images/icon/notification.png" width="30" height="30"
+									style="margin-left: 0%;" /></i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 	<div class="row" style="height: 100%; width: 100%; position: fixed; background-color: #7766C6;">
-		<div class="col" style="background-color: #F9B0C3; height: 86%; width: 50%; margin-left:25%; margin-top:1%; border-radius:50px">
+		<div class="col" style="background-color: white; height: 90%; width: 50%; margin-left:25%; margin-top:1%; border-radius:50px">
 			<div style="height:20px"></div>
 			<center><p id="tituloTi">HÁBLANOS DE TI</p></center>
 
@@ -33,17 +54,20 @@
 			<div class="row">
 				<div class="col s.5"></div>
 				<div class="col s6" style="margin-top: 15px">
-					<label for="serieTi">¿Cuál es tu serie favorita?</label>
+					<label for="serieTi">¿Cuál es tu serie favorita?</label><br>
+					<span style="color: red;" hidden id="serie">Por favor ingrese su serie favorita</span>
 				</div>
 				<div class="col s5">
 					<input type="text" id="serieTi">
 				</div>
 			</div>
 
+
 			<div class="row">
 				<div class="col s.5"></div>
 				<div class="col s6" style="margin-top: 25px">
-					<label>¿Género cinematográfico?</label>
+					<label>¿Género cinematográfico?</label><br>
+					<span style="color: red;" hidden id="genero">Por favor ingrese su género favorito</span>
 				</div>
 				<div class="col s5">
 					<div class="input-field">
@@ -66,7 +90,8 @@
 			<div class="row">
 				<div class="col s.5"></div>
 				<div class="col s6" style="margin-top: 15px">
-					<label for="peliculaTi">Menciona tu película preferida</label>
+					<label for="peliculaTi">Menciona tu película preferida</label><br>
+					<span style="color: red;" hidden id="pelicula">Por favor ingrese una película</span>
 				</div>
 				<div class="col s5">
 					<input type="text" id="peliculaTi">
@@ -76,7 +101,8 @@
 			<div class="row">
 				<div class="col s.5"></div>
 				<div class="col s6" style="margin-top: 15px">
-					<label for="streamingTi">Mejor plataforma de straming</label>
+					<label for="streamingTi">Mejor plataforma de straming</label><br>
+					<span style="color: red;" hidden id="plataforma">Por favor ingrese una plataforma</span>
 				</div>
 				<div class="col s5">
 					<input type="text" id="streamingTi">
@@ -89,7 +115,7 @@
 					<a class="waves-effect waves-light btn" id="btnCancelar" style="width:100%; border-radius: 10px;"><p id="botonTi">CANCELAR</p></a>
 				</div>
 				<div class="col s4">
-					<a class="waves-effect waves-light btn" id="btnSiguiente" href="./form_wizard2.html" style="width:100%; border-radius: 10px;"><p id="botonTi">SIGUIENTE</p></a>
+					<a class="waves-effect waves-light btn" id="btnSiguiente" style="width:100%; border-radius: 10px;" onclick="validar()"><p id="botonTi">SIGUIENTE</p></a>
 				</div>
 			</div>
 
@@ -150,5 +176,38 @@
 			text-align: center;
 		}
 	</style>
+	<script type="text/javascript">
+		function validar() {
+			var serieTi = document.getElementById('serieTi');
+			var serie = document.getElementById('serie')
+			var genero = document.getElementById('genero');
+			var peliculaTi = document.getElementById('peliculaTi');
+			var pelicula = document.getElementById('pelicula');
+			var plataforma = document.getElementById('plataforma');
+			var plataformaTi = document.getElementById('streamingTi');
+			var cont = 0;
+			if(serieTi.value.length == 0){
+				serie.removeAttribute('hidden');
+			}else {
+                serie.setAttribute('hidden', '');
+                cont = cont + 1;
+            }
+            if(peliculaTi.value.length == 0){
+				pelicula.removeAttribute('hidden');
+			}else {
+                pelicula.setAttribute('hidden', '');
+                cont = cont + 1;
+            }
+            if(plataformaTi.value.length == 0){
+				plataforma.removeAttribute('hidden');
+			}else {
+                plataforma.setAttribute('hidden', '');
+                cont = cont + 1;
+            }
+            if (cont == 3) {
+            	window.location.href = '../view/form_wizard2.html';
+            }
+		}
+	</script>
 </body>
 </html>

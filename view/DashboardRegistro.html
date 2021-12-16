@@ -1,119 +1,147 @@
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Librerías de Materialize -->
-	<script type="text/javascript" src="../js/materialize.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/materialize.css">
-	<script type="text/javascript" src="../js/materialize.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
-	<!-- Librería de iconos Materialize -->
-	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	 <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-	<title>ENQUI</title>
-</head>
-<body>
-	<nav>
-	    <div class="nav-wrapper">
-	        <a href="#!" class="brand-logo"> 
-	        	<img src="../images/Logo.png" align="left"style="width: 11.5%; height: 25%; margin-left:4%; margin-top: 0.5%" >
-	        	<p id="titulo">ENQUI</p>
-	        </a>
-	        <ul id="nav-mobile" class=" hide-on-med-and-down">
-        		<li><a href="./DashboardRegistro.html" id="titulo1">Registro</a></li>
-        		<li><a href="./DashboardListado.html" id="titulo1">Productos</a></li>
-        		<li><a href="./DashboardGrafico.html" id="titulo1">Gráficos</a></li>
-      		</ul>
-	    </div>
-	</nav>
-	<div id="div1">	
-	<div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">Nombre del producto:</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="price" type="number" class="validate">
-          <label for="price">Precio:</label>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="categoria" type="text" class="validate">
-          <label for="categoria">Categoría:</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="descripcion" type="text" class="validate">
-          <label for="descripcion">Descripción:</label>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Librerías de Materialize -->
+  <script type="text/javascript" src="../js/materialize.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/materialize.css">
+  <script type="text/javascript" src="../js/materialize.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
+  <!-- Librería de iconos Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body style="font-family: 'Montserrat'">
+  <div>
+    <nav style="font-family: 'Montserrat'">
+      <div class="nav-wrapper" style="background-color:#46467a">
+        <a href="#!" class="brand-logo"><img class="responsive-img" width="70%" src="../images/logo.png"></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="./DashboardRegistro.html" id="titulo1">Registro</a></li>
+          <li><a href="./DashboardListado.html" id="titulo1">Productos</a></li>
+          <li><a href="./DashboardGrafico.html" id="titulo1">Gráficos</a></li>
+        </ul>
       </div>
-      	</div>
-      	<div class="row" id="div2">
-      		<center>
-      		<div  class="input-field col s6"> 
-        		<a class="waves-effect1 waves-light btn" href="./DashboardRegistro.html">Cancelar</a>
-       		</div>
-       		<div class="input-field col s6">
-        		<a class="waves-effect2 waves-light btn" href="./DashboardListado.html">Registrar</a>
-        	</div>
-        	</center>
+    </nav>
+
+    <!-- Dropdown Structure 1 -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">Perfil</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Config.</a></li>
+    </ul>
+    <!-- Dropdown Structure 2-->
+    <ul id="dropdown2" class="dropdown-content">
+      <li><a href="#!">Mensajes</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Wizard</a></li>
+    </ul>
+  </div>
+
+  <div id="div1">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="icon_prefix" type="text" class="validate">
+            <label for="icon_prefix">Nombre del producto:</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="price" type="number" class="validate">
+            <label for="price">Precio:</label>
+          </div>
         </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="categoria" type="text" class="validate">
+            <label for="categoria">Categoría:</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="descripcion" type="text" class="validate">
+            <label for="descripcion">Descripción:</label>
+          </div>
+        </div>
+    </div>
+    <div class="row" id="div2">
+      <center>
+        <div class="input-field col s6">
+          <a class="waves-effect1 waves-light btn" href="./DashboardRegistro.html">Cancelar</a>
+        </div>
+        <div class="input-field col s6">
+          <a id="registrar" class="waves-effect2 waves-light btn" disabled href="./DashboardListado.html">Registrar</a>
+        </div>
+      </center>
+    </div>
     </form>
   </div>
-</div>
-	<style type="text/css">
-		#nav-mobile{
-			margin-left: 75%;
-		}
-		#div1{
-			margin-left: 5%;
-			margin-right: 5%;
-			margin-top: 2%;
-		}
-		#div2{
-			margin-left: 5%;
-			margin-right: 5%;
-			margin-top: 15%;
-		}
-  		#titulo{
-  			font-family: 'Montserrat', sans-serif;
-  			font-size: 28px;
-  			margin-left: 3%;
-  		}
-  		#titulo1{
-  			font-family: 'Montserrat', sans-serif;
-  			font-size: 18px;
-  			margin-left: 3%;
-  		}
-  		#titulo2{
-  			font-family: Bebas Neue;
-  			font-size: 20px;
-  			margin-left: 3%;
-  			color:#08376B;
-  		}
-  		.waves-effect{
-  			border-radius: 18px;
-  			background-color: #FFFFFF;
-  		}
-  		.waves-effect1{
-  			font-family: Bebas Neue;
-  			font-size: 21px;
-  			color:#000000;
-  			background-color: #C2CEDB;
-  		}
-  		.waves-effect2{
-  			font-family: Bebas Neue;
-  			font-size: 21px;
-  			background-color: #46467A;
-  		}
-  	</style>
-  	<script type="text/javascript">
-    
-  	</script>
+  </div>
+  <style type="text/css">
+    #div1 {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 2%;
+    }
+
+    #div2 {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 15%;
+    }
+
+    .waves-effect1 {
+      font-family: Bebas Neue;
+      font-size: 21px;
+      color: #000000;
+      background-color: #C2CEDB;
+    }
+
+    .waves-effect2 {
+      font-family: Bebas Neue;
+      font-size: 21px;
+      background-color: #46467A;
+    }
+  </style>
+  <script type="text/javascript">
+
+  </script>
+  <script>
+    const boton = document.getElementById('registrar');
+      function validacion() {
+        var formEmpty = inputsEmpty();
+        if (!formEmpty) {
+          boton.removeAttribute('disabled');
+        } else {
+          boton.setAttribute('disabled', 'disabled');
+        }
+      }
+
+      function inputsEmpty(){
+        var nombre = (document.getElementById('icon_prefix').value.length < 1);
+        var precio = (document.getElementById('price').value.length < 1);
+        var categoria = (document.getElementById('categoria').value.length < 1);
+        var descripcion = (document.getElementById('descripcion').value.length < 1);
+
+        if(nombre || precio || categoria || descripcion){
+          return true;
+        }else{
+          return false;
+        }
+      }
+
+    setInterval(validacion, 100);
+  </script>
 </body>
+
 </html>

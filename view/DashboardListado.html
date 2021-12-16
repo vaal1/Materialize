@@ -8,26 +8,31 @@
 	<script type="text/javascript" src="../js/materialize.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
 	<!-- Librería de iconos Materialize -->
-	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	 <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<title>ENQUI</title>
 </head>
 <body>
-	<nav>
-	    <div class="nav-wrapper">
-	        <a href="#!" class="brand-logo"> 
-	        	<img src="../images/Logo.png" align="left"style="width: 11.5%; height: 25%; margin-left:4%; margin-top: 0.5%" >
-	        	<p id="titulo">ENQUI</p>
-	        </a>
-	        <ul id="nav-mobile" class=" hide-on-med-and-down">
-        		<li><a href="./DashboardRegistro.html" id="titulo1">Registro</a></li>
-        		<li><a href="./DashboardListado.html" id="titulo1">Productos</a></li>
-        		<li><a href="./DashboardGrafico.html" id="titulo1">Gráficos</a></li>
-      		</ul>
-	    </div>
-	</nav>
+	<div>
+        <nav style="font-family: 'Montserrat'">
+            <div class="nav-wrapper" style="background-color:#46467a">
+                <a href="#!" class="brand-logo"><img class="responsive-img" width="70%" src="../images/Logo.png"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="./DashboardRegistro.html">Registro</a></li>
+        		<li><a href="./DashboardListado.html">Productos</a></li>
+        		<li><a href="./DashboardGrafico.html">Gráficos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 		
 	<div class="divp"> 
 		<div class="row right " style="display: flex;">
@@ -39,9 +44,9 @@
 			</div>
 			<div><p id="titulo2">  Añadir</p></div>
 		</div>
-		<div>
+		<div style="font-family: 'Montserrat'">
 		<table class="centered ">
-        <thead class="Encabezado">
+        <thead>
           <tr>
           	  <th>Nº</th>
               <th>Nombre del producto</th>
@@ -86,33 +91,8 @@
 		</div>
 
 	</div>
-	<style type="text/css">	
-
-		#nav-mobile{
-			margin-left: 75%;
-		}
-  		#titulo{
-  			font-family: 'Montserrat', sans-serif;
-  			font-size: 28px;
-  			margin-left: 3%;
-  		}
-  		#titulo3{
-  			font-family: 'Montserrat', sans-serif;
-  			font-size: 30px;
-  			margin-left: 3%;
-  			color:#000000;
-  		}
-  		#titulo1{
-  			font-family: 'Montserrat', sans-serif;
-  			font-size: 18px;
-  			margin-left: 3%;
-  		}
-  		#texto{
-  			font-family: Montserrat;
-  			font-size: 16px;
-  			color:#000000;
-
-  		}
+	<style type="text/css">
+  		
   		#titulo2{
   			font-family: Bebas Neue;
   			font-size: 23px;
@@ -136,13 +116,14 @@
   			background-color:#46467A;
 
   		}
-  		.Encabezado{
-  			background-color:#E0DFFD;
-  		}
   		}
   	</style>
-  	<script type="text/javascript">
-    
-  	</script>
+  	<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems);
+        });
+    </script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>

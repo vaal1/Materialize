@@ -9,18 +9,29 @@
 	<link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
 	<!-- Librería de iconos Materialize -->
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	 <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-	<title>ENQUI</title>
+	<link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
+<style>
+    body {
+        font-family: 'Bebas Neue';
+    }
+    </style>
 <body>
     <div>
         <nav style="font-family: 'Montserrat'">
             <div class="nav-wrapper" style="background-color:#46467a">
-                <a href="#!" class="brand-logo"><img class="responsive-img" width="70%" src="../images/logo.png"></a>
+                <a href="#!" class="brand-logo"><img class="responsive-img" width="70%" src="../images/Logo.png"></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="product_list.html">Categorias</a></li>
+                    <li><a href="#">Categorias</a></li>
                     <li><a href="#">Ofertas</a></li>
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Contacto</a></li>
@@ -31,7 +42,7 @@
                     <li><a class="dropdown-trigger" href="#!" data-target="dropdown2"><i class="material-icons"
                                 style="color: #F9B0C3">notifications_active</i><i
                                 class="material-icons right">arrow_drop_down</i></a></li>
-                    <li><a class="dropdown-trigger" href="shoping_cart.html" data-target="dropdown3"><i class="material-icons"
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown3"><i class="material-icons"
                                 style="color: #F9B0C3">shopping_cart</i><i
                                 class="material-icons right">arrow_drop_down</i></a></li>
 
@@ -41,9 +52,9 @@
 
         <!-- Dropdown Structure 1 -->
         <ul id="dropdown1" class="dropdown-content">
-            <li><a href="profile.html">Perfil</a></li>
+            <li><a href="#!">Perfil</a></li>
             <li class="divider"></li>
-            <li><a href="form_wizard1.html">Conf</a></li>
+            <li><a href="#!">Config.</a></li>
         </ul>
         <!-- Dropdown Structure 2-->
         <ul id="dropdown2" class="dropdown-content">
@@ -86,39 +97,20 @@
 	</div>
 	</div>
 	<style type="text/css">	
-
-		.btn{
-			background-color:transparent;
-		}
-		#nav-mobile{
-			margin-left: 50%;
-		}
-  		#titulo{
-  			font-family: 'Montserrat', sans-serif;
-  			font-size: 28px;
-  			margin-left: 3%;
-  		}
-  		#titulo3{
-  			font-family: 'Montserrat', sans-serif;
-  			font-size: 30px;
-  			margin-left: 3%;
-  			color:#000000;
-  		}
-  		#titulo1{
-  			font-family: 'Montserrat', sans-serif;
-  			font-size: 18px;
-  			margin-left: 3%;
-  		}
   		#titulo2{
   			font-family: Bebas Neue;
   			font-size: 23px;
   			margin-left: 3%;
   			color:#46467A;
   		}
-  		}
+  		
   	</style>
-  	<script type="text/javascript">
-    
-  	</script>
+  	<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var instances = M.Dropdown.init(elems);
+        });
+    </script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>
